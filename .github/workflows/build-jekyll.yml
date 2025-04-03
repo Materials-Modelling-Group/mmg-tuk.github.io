@@ -12,7 +12,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4
         with:
@@ -24,9 +24,7 @@ jobs:
       #- name: Install dependencies
       #  run: bundle install
       #  working-directory: "./"
-      - name: bypass-security-err-2
-        run: git config --global --add safe.directory /github/workspace
-      - uses: jeffreytse/jekyll-deploy-action@v0.5.1
+      - uses: jeffreytse/jekyll-deploy-action@v0.6.0
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
