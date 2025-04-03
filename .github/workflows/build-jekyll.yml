@@ -31,6 +31,7 @@ jobs:
           repository: ''             # Default is current repository
           branch: 'master'         # Default is gh-pages for github provider
           jekyll_src: './'           # Default is root directory
+          ruby_ver: '3.2.0'
           jekyll_cfg: '_config.yml'  # Default is _config.yml
           jekyll_baseurl: ''  # Default is empty
           cname: ''                  # Default is to not use a cname
