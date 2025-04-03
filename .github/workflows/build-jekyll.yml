@@ -3,7 +3,7 @@ name: Github Pages
 on:
   push:
     branches:
-      - main  # Here source code branch is `master`, it could be other branch
+      - master  # Here source code branch is `master`, it could be other branch
 
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
