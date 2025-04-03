@@ -24,6 +24,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       # Use GitHub Deploy Action to build and deploy to Github
+      - name: bypass-security-err-2
+        run: git config --global --add safe.directory /github/workspace
       - uses: jeffreytse/jekyll-deploy-action@v0.5.1
         with:
           provider: 'github'
